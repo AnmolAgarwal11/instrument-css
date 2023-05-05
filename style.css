@@ -1,0 +1,301 @@
+/* //////////////////////////////////////////////////////////////////////////////////////
+Element css
+///////////////////////////////////////////////////////////////////////////////////// */
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	color: white;
+	padding: 2.5rem 3.75rem;
+}
+
+h1 {
+	/* background-color: red; */
+	font-family: "Lato", sans-serif;
+	font-size: 5.5rem;
+	font-weight: bold;
+	margin-bottom: 3.125rem;
+}
+
+h2 {
+	/* background-color: green; */
+	font-family: "Lato", sans-serif;
+	font-size: 3.125rem;
+	line-height: 1.5;
+	word-spacing: 0.75rem;
+}
+
+h3 {
+	/* background-color: brown; */
+	font-family: "Lato", sans-serif;
+	font-size: 1.875rem;
+	line-height: 1.5;
+	word-spacing: 0.75rem;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: "Roboto Mono", monospace;
+	font-size: 0.875rem;
+	letter-spacing: 0.7px;
+}
+
+p {
+	/* background-color: blue; */
+	font-family: "Lato", sans-serif;
+	font-size: 1.375rem;
+	line-height: 1.5;
+	word-spacing: 0.75rem;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////
+Classes css
+///////////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////// LINK BUTTON AND OTHER CLASSES //////////////////////////////// */
+
+.link-button {
+	display: inline-block;
+	background-color: white;
+	color: black;
+	margin-top: 3.125rem;
+	padding: 1.125rem 2.25rem;
+	border-radius: 50px;
+}
+
+.dark-button {
+	background-color: black;
+	color: white;
+	border: 1px solid grey;
+}
+
+.link-button:hover {
+	opacity: 0.7;
+	transition-duration: 0.3s;
+}
+
+.section {
+	margin: 11rem 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.centre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-centre {
+	text-align: center;
+}
+
+/* ////////////////////////////////// NAVBAR //////////////////////////////// */
+
+.navbar {
+	width: 100%;
+	justify-content: space-between;
+	/* background-color: aqua; */
+}
+
+.icon a {
+	font-size: 1.375rem;
+	font-family: "Oswald", sans-serif;
+	line-height: 1;
+}
+
+.nav-list {
+	list-style-type: none;
+	/* background-color: rebeccapurple; */
+	/* height: 39.2px;  Enable for link hovers*/
+}
+
+.nav-list-item {
+	display: inline-block;
+	padding: 0.625rem 1.25rem;
+	margin-right: 1.875rem;
+	text-transform: uppercase;
+}
+
+/* Link hovers */
+/* .nav-list-item a:hover {
+	opacity: 0.7;
+	transition-duration: 0.3s;
+	font-weight: bold;
+} */
+
+.nav-toggle {
+	display: none;
+}
+
+/* ////////////////////////////////// TEXT AND PROJECT //////////////////////////////// */
+
+.proj-child {
+	width: 50%;
+}
+
+/* ////////////////////////////////// CAMPAIGNS //////////////////////////////// */
+
+.campaigns-holder {
+	display: flex;
+	justify-content: space-between;
+}
+
+.campaigns {
+	width: 48%;
+}
+
+.campaigns img,
+h3 {
+	margin-bottom: 1rem;
+}
+
+.campaigns p {
+	font-size: 1rem;
+	width: 80%;
+}
+
+/* ////////////////////////////////// BRANDS //////////////////////////////// */
+
+.brands-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+}
+
+.brands {
+	width: 17%;
+	margin: 0 5rem;
+}
+
+/* ////////////////////////////////// FOOTER //////////////////////////////// */
+
+.footer {
+	justify-content: space-between;
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0;
+	/* background-color: rebeccapurple; */
+}
+
+.footer-list-item {
+	padding: 0.75rem 3.75rem;
+	text-transform: uppercase;
+}
+
+.footer-right-child {
+	display: flex;
+	align-self: flex-end;
+}
+
+.footer-right-child .dark-button {
+	float: right;
+}
+
+.footer-right-child-socials {
+	display: flex;
+	align-self: flex-end;
+}
+
+.fa {
+	font-size: 1.5rem;
+	text-decoration: none;
+	margin: 24px 0 16px 42px;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////
+Media queries
+///////////////////////////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////////////// RELATED CSS //////////////////////////////// */
+
+.header p {
+	width: 50%;
+}
+
+.section h2 {
+	width: 50%;
+}
+
+.proj-text {
+	width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-list-item {
+		display: none;
+	}
+	.nav-toggle {
+		float: right;
+		display: block;
+	}
+	.header p {
+		width: 90%;
+	}
+	.header h1 {
+		font-size: 5rem;
+	}
+
+	.section h2 {
+		width: 80%;
+		font-size: 3rem;
+	}
+
+	.proj-child {
+		width: 100%;
+		align-items: center;
+		margin-bottom: 3.125rem;
+	}
+
+	.proj-text {
+		width: 80%;
+	}
+
+	.proj {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.campaigns-holder {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.campaigns {
+		width: 80%;
+		margin-bottom: 3.125rem;
+	}
+
+	.campaigns p {
+		width: 100%;
+	}
+
+	.footer-right-child {
+		flex-direction: column;
+	}
+
+	.link-button {
+		margin-top: 3.125rem;
+		padding: 0.75rem 1.875rem;
+	}
+}
